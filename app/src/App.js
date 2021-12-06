@@ -1,7 +1,9 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import { getCategories } from "./api";
 import NavBar from "./Components/NavBar";
 
 function App() {
+  getCategories();
   return (
     <div>
       <NavBar />

@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 const Categories = () => {
   return (
     <div>
-      <a>aaaaaaaaaaaaa</a>
-      <Link to="/">Categories</Link>
+      <h1> Categorias </h1>
+
+      <Link to="/">Home</Link>
     </div>
   );
 };
