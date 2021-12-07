@@ -22,7 +22,6 @@ export const getActiveProducts = async () => {
     .filter((product) => product.inativo !== true || product.inativo)
     .filter((product) => product.titulo && product.valor);
 
-  console.log("Produtos Ativos", filtered);
   return filtered;
 };
 
@@ -44,7 +43,6 @@ export const getCategories = async () => {
     return true;
   });
 
-  console.log("Categorias", categories);
   return categories;
 };
 

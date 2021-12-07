@@ -1,11 +1,10 @@
 import { Routes, Route, Link } from "react-router-dom";
-import { getCategories, getProdutcsByCategory } from "./api";
+import { Container } from "./AppStyles";
 import NavBar from "./Components/NavBar";
-import { UserContext } from "./Routes";
 
 function App() {
   return (
-    <div>
+    <Container>
       <NavBar />
       <Routes>
         <Route index element={<Home />} />
@@ -13,7 +12,7 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
-    </div>
+    </Container>
   );
 }
 

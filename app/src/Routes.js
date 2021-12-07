@@ -4,7 +4,6 @@ import Categories from "./Pages/Caregories";
 import NoMatch from "./Components/NoMatch";
 import { getActiveProducts } from "./api";
 
-import App from "./App";
 import AllProducts from "./Pages/AllProducts";
 
 export const UserContext = React.createContext();
@@ -24,6 +23,7 @@ const Rotas = () => {
   useEffect(() => {
     getProducts();
   }, [reload]);
+
   return (
     <UserContext.Provider value={products}>
       <Routes>
