@@ -50,4 +50,9 @@ export const getCategories = async () => {
 
 export const getProdutcsByCategory = async (category) => {
   let categories = await getCategories();
+  let filteredProducts = categories.filter(
+    (product) => product.categoria === category
+  );
+  console.log("Filtrados", filteredProducts);
+  return filteredProducts;
 };

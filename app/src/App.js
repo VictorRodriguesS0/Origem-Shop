@@ -1,9 +1,9 @@
 import { Routes, Route, Link } from "react-router-dom";
-import { getCategories } from "./api";
+import { getCategories, getProdutcsByCategory } from "./api";
 import NavBar from "./Components/NavBar";
+import { UserContext } from "./Routes";
 
 function App() {
-  getCategories();
   return (
     <div>
       <NavBar />
