@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-export const ProductImg = styled.img`
-  align-items: center;
-  width: 70%;
+export const Container = styled.div`
+  text-align: center;
 `;

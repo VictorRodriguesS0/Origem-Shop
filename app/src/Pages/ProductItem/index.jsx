@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "antd";
-import { ProductImg } from "../AllProducts/styles";
+import { ProductImg } from "./styles";
 
 const ProductItem = ({ produto }) => {
   const { Meta } = Card;
